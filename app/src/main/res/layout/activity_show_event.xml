@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/event_name_hint" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/event_date_hint" />
+
+    <EditText
+        android:id="@+id/editTextTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/event_time_hint" />
+
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/description_hint" />
+
+    <EditText
+        android:id="@+id/editTextGuardian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/guardian_hint" />
+
+    <EditText
+        android:id="@+id/editTextChild"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/child_hint" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/btnEditEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnEditEvent"
+            app:layout_constraintEnd_toStartOf="@+id/btnDeleteEvent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="updateEvent"/>
+
+        <Button
+            android:id="@+id/btnDeleteEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnDeleteEvent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnEditEvent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="deleteEvent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

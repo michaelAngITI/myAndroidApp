@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/event_name_hint" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/event_date_hint" />
+
+    <EditText
+        android:id="@+id/editTextTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/event_time_hint" />
+
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/description_hint" />
+
+    <EditText
+        android:id="@+id/editTextGuardian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/guardian_hint" />
+
+    <EditText
+        android:id="@+id/editTextChild"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/child_hint" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_event_btn"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
